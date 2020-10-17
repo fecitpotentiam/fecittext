@@ -1,6 +1,7 @@
 # Text normalization tool (supports russian language)
 
-##Using
+## Using
+
     text = 'Пример текста для нормализации. Пример текста для нормализации'
     text_normalizer = TextNormalizer()
     result = text_normalizer.normalize_text(
