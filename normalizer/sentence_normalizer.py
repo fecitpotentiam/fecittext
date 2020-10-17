@@ -2,7 +2,7 @@ import string
 
 from nltk import word_tokenize
 
-from code.word_normalizer import WordNormalizer
+from normalizer.word_normalizer import WordNormalizer
 
 
 class SentenceNormalizer:
@@ -81,7 +81,8 @@ class SentenceNormalizer:
         if del_punctuation:
             tokenized_sentence = self.tokenize_sentence_without_punctuation(sentence, stop_words_ignore)
         else:
-            tokenized_sentence = self.tokenize_sentence_with_punctuation(sentence, stop_words_ignore)
+            tokenized_sentence = self.tokenize_sentence_with_punctuation(sentence)
+
 
         if method == 'lemma':
             normalized_sentence = self.__lemmatize_sentence(tokenized_sentence)

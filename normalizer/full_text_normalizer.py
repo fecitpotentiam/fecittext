@@ -3,7 +3,7 @@ from typing import Union
 from nltk import sent_tokenize
 from sklearn.base import BaseEstimator, TransformerMixin
 
-from code.sentence_normalizer import SentenceNormalizer
+from normalizer.sentence_normalizer import SentenceNormalizer
 
 
 class FullTextNormalizer(BaseEstimator, TransformerMixin):
